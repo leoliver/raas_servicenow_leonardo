@@ -16,8 +16,8 @@
         <element default="0" label="Average Rating" max_length="255" name="average_rating" type="float"/>
         <element default="0" label="Metascore" max_length="40" name="metascore" type="integer"/>
         <element label="Production" max_length="250" name="production" type="string"/>
-        <element label="Website" max_length="40" name="website" type="url"/>
-        <element label="Poster" max_length="40" name="poster" type="url"/>
+        <element label="Website" max_length="250" name="website" type="url"/>
+        <element label="Poster" max_length="250" name="poster" type="url"/>
         <element label="Writers" max_length="4000" name="writers" type="string"/>
         <element label="Awards" max_length="250" name="awards" type="string"/>
         <element label="IMDB Rating" max_length="255" name="imdb_rating" type="float"/>
