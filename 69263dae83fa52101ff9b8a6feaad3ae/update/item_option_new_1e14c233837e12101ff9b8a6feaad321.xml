@@ -50,7 +50,7 @@
         <pricing_implications>false</pricing_implications>
         <published_ref/>
         <question_text>Synopsis</question_text>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-06 18:46:54</sys_created_on>
         <sys_id>1e14c233837e12101ff9b8a6feaad321</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Synopsis</sys_name>
         <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
         <sys_update_name>item_option_new_1e14c233837e12101ff9b8a6feaad321</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-06 19:12:24</sys_updated_on>
+        <sys_updated_on>2025-01-07 13:42:30</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

@@ -50,7 +50,7 @@
         <pricing_implications>false</pricing_implications>
         <published_ref/>
         <question_text>Average Rating</question_text>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-06 19:03:59</sys_created_on>
         <sys_id>a7e78637837e12101ff9b8a6feaad34d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Average Rating</sys_name>
         <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
         <sys_update_name>item_option_new_a7e78637837e12101ff9b8a6feaad34d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-06 19:08:47</sys_updated_on>
+        <sys_updated_on>2025-01-07 13:42:42</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
