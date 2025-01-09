@@ -2,6 +2,7 @@
     <element db_object_id="fe0a29b683b212101ff9b8a6feaad397" label="Media" max_length="40" name="x_1593179_raas_media" type="collection">
         <element label="Country" max_length="250" name="country" type="string"/>
         <element label="Language" max_length="250" name="language" type="string"/>
+        <element label="Release Year" max_length="4" name="release_year" type="string"/>
         <element label="Genre" max_length="1024" name="genre" reference="x_1593179_raas_genre" type="glide_list"/>
         <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
@@ -22,5 +23,19 @@
         <element label="Awards" max_length="250" name="awards" type="string"/>
         <element label="IMDB Rating" max_length="255" name="imdb_rating" type="float"/>
         <element label="Category" max_length="40" name="category" type="string"/>
+        <element choice="1" default="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Completed" sequence="100" value="3"/>
+                <element inactive_on_update="false" label="Draft" sequence="200" value="1"/>
+            </choice>
+        </element>
+        <element choice="1" default="1" label="Integration State" max_length="40" name="integration_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Integration Failure" sequence="300" value="4"/>
+                <element inactive_on_update="false" label="Starting" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="400" value="3"/>
+                <element inactive_on_update="false" label="Integrating" sequence="200" value="2"/>
+            </choice>
+        </element>
     </element>
 </database>
