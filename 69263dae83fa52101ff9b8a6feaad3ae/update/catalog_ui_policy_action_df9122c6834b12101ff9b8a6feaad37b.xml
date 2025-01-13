@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Media Suggestion">d03a968a830b12101ff9b8a6feaad3f0</catalog_item>
+        <catalog_variable>IO:cf006a06834b12101ff9b8a6feaad392</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>300</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-13 20:41:09</sys_created_on>
+        <sys_id>df9122c6834b12101ff9b8a6feaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>release_year</sys_name>
+        <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_df9122c6834b12101ff9b8a6feaad37b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-13 20:41:09</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Mandatory Fields">7e612e86834b12101ff9b8a6feaad3e0</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>release_year</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=df9122c6834b12101ff9b8a6feaad37b"/>
+</record_update>
