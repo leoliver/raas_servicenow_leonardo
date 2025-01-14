@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_attribute">
+    <sys_security_attribute action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition>HasAdminRole=true</condition>
+        <description>Auto Created Attribute - ACL_0692935683c712101ff9b8a6feaad334</description>
+        <is_dynamic>true</is_dynamic>
+        <is_localized>true</is_localized>
+        <is_system>false</is_system>
+        <label>ACL_0692935683c712101ff9b8a6feaad334</label>
+        <lookup_table/>
+        <lookup_table_column/>
+        <name>x_1593179_raas__ACL_0692935683c712101ff9b8a6feaad334</name>
+        <script/>
+        <sys_class_name>sys_security_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 18:53:58</sys_created_on>
+        <sys_id>03a2575683c712101ff9b8a6feaad30a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593179_raas__ACL_0692935683c712101ff9b8a6feaad334</sys_name>
+        <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
+        <sys_update_name>sys_security_attribute_03a2575683c712101ff9b8a6feaad30a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 18:53:58</sys_updated_on>
+        <type>compound</type>
+    </sys_security_attribute>
+</record_update>
