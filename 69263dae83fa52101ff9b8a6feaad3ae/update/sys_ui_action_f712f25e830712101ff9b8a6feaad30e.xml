@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments>This button will update the media state from "Draft" to "Completed".</comments>
-        <condition>current.state == '1'</condition>
+        <condition>current.state.toString() == '1' &amp;&amp; current.integration_state.toString() == '3'</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -27,7 +27,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Complete Media</name>
+        <name>Set as Completed</name>
         <onclick>complete_media_state()</onclick>
         <order>200</order>
         <script><![CDATA[function complete_media_state() {
@@ -50,15 +50,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f712f25e830712101ff9b8a6feaad30e</sys_id>
-        <sys_mod_count>18</sys_mod_count>
-        <sys_name>Complete Media</sys_name>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Set as Completed</sys_name>
         <sys_overrides/>
         <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
         <sys_update_name>sys_ui_action_f712f25e830712101ff9b8a6feaad30e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 17:16:59</sys_updated_on>
+        <sys_updated_on>2025-01-14 20:37:44</sys_updated_on>
         <table>x_1593179_raas_media</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
