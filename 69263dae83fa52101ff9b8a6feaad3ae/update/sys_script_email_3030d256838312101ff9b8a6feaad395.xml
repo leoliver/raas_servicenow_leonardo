@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>error_lower_case</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+          template.print("There was an error on Integration for " + current.type.toLowerCase() + " " + current.title + ".")
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 14:22:39</sys_created_on>
+        <sys_id>3030d256838312101ff9b8a6feaad395</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>error_lower_case</sys_name>
+        <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
+        <sys_update_name>sys_script_email_3030d256838312101ff9b8a6feaad395</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 14:25:34</sys_updated_on>
+    </sys_script_email>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3030d256838312101ff9b8a6feaad395</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 14:22:38</sys_created_on>
+        <sys_id>ac94921a838312101ff9b8a6feaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 14:22:38</sys_updated_on>
+        <table>sys_script_email</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
