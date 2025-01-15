@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
     <sys_process_flow action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_1593179_raas_media">state=3^EQ<item display_value="Completed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+        <condition table="x_1593179_raas_media">state=7^EQ<item display_value="Duplicate" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="7"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <description/>
-        <label>Completed</label>
-        <name>Completed</name>
-        <order>300</order>
+        <label>Duplicate</label>
+        <name>Duplicate</name>
+        <order>200</order>
         <sys_class_name>sys_process_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-14 17:44:15</sys_created_on>
-        <sys_id>2472c792838712101ff9b8a6feaad366</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Completed</sys_name>
+        <sys_created_on>2025-01-15 18:38:54</sys_created_on>
+        <sys_id>18b81c3283c712101ff9b8a6feaad35d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Duplicate</sys_name>
         <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
-        <sys_update_name>sys_process_flow_2472c792838712101ff9b8a6feaad366</sys_update_name>
+        <sys_update_name>sys_process_flow_18b81c3283c712101ff9b8a6feaad35d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-15 18:39:08</sys_updated_on>
+        <sys_updated_on>2025-01-15 18:38:54</sys_updated_on>
         <table>x_1593179_raas_media</table>
     </sys_process_flow>
 </record_update>
