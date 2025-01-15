@@ -2,11 +2,11 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>complete_media_state</action_name>
         <active>true</active>
-        <client>true</client>
+        <client>false</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
 }]]></client_script_v2>
-        <comments>This button will update the media state from "Draft" to "Completed".</comments>
+        <comments/>
         <condition>current.state.toString() == '1' &amp;&amp; current.integration_state.toString() == '3'</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -16,7 +16,7 @@
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
-        <hint>This button will update the media state from "Draft" to "Completed".</hint>
+        <hint/>
         <isolate_script>true</isolate_script>
         <list_action>false</list_action>
         <list_banner_button>false</list_banner_button>
@@ -30,16 +30,44 @@
         <name>Set as Completed</name>
         <onclick>complete_media_state()</onclick>
         <order>200</order>
-        <script><![CDATA[function complete_media_state() {
-	var answer = confirm("Are you sure?")
-	if(answer) {
-		g_form.setValue("state", '3');
-		g_form.save();
-	} else {
-		location.reload();
-	}
+        <script><![CDATA[current.setValue("state", "3");
+current.update();
+
+var grMedia = new GlideRecord("x_1593179_raas_media");
+grMedia.addEncodedQuery("title=" + current.getValue("title") + "^type=" + current.getValue("type") + "^release_year=" + current.getValue("release_year") + "^sys_id!=" + current.getValue("sys_id"));
+grMedia.query();
+while(grMedia.next()) {
+	grMedia.setValue("state", "7");
+	grMedia.setValue("genre", "");
+	grMedia.setValue("category", "");
+	grMedia.setValue("release_date", "");
+	grMedia.setValue("synopsis", "");
+	grMedia.setValue("writers", "");
+	grMedia.setValue("production", "");
+	grMedia.setValue("poster", "");
+	grMedia.setValue("website", "");
+	grMedia.setValue("average_rating", "0");
+	grMedia.setValue("imdb_rating", "0");
+	grMedia.setValue("metascore", "0");
+	grMedia.setValue("language", "");
+	grMedia.setValue("country", "");
+	grMedia.setValue("integration_state", "1");
+	grMedia.setValue("integration_error_message", "");
+
+	var grMediaActor = new GlideRecord("x_1593179_raas_m2m_actor_media");
+	grMediaActor.addEncodedQuery("x_1593179_raas_media=" + grMedia.getValue("sys_id"));
+	grMediaActor.query();
+	grMediaActor.deleteMultiple();
+
+	var grMediaDirector = new GlideRecord("x_1593179_raas_m2m_director_media");
+	grMediaDirector.addEncodedQuery("x_1593179_raas_media=" + grMedia.getValue("sys_id"));
+	grMediaDirector.query();
+	grMediaDirector.deleteMultiple();
 	
-}]]></script>
+	grMedia.update();
+}
+
+action.setRedirectURL(current);]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -50,7 +78,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f712f25e830712101ff9b8a6feaad30e</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Set as Completed</sys_name>
         <sys_overrides/>
         <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
@@ -58,7 +86,7 @@
         <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
         <sys_update_name>sys_ui_action_f712f25e830712101ff9b8a6feaad30e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 20:37:44</sys_updated_on>
+        <sys_updated_on>2025-01-15 20:57:39</sys_updated_on>
         <table>x_1593179_raas_media</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
@@ -68,10 +96,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-14 16:38:21</sys_created_on>
         <sys_id>6ca37a9e830712101ff9b8a6feaad3de</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 16:38:21</sys_updated_on>
+        <sys_updated_on>2025-01-15 20:17:57</sys_updated_on>
         <table>sys_ui_action</table>
-        <use_es_latest>false</use_es_latest>
+        <use_es_latest>true</use_es_latest>
     </sys_es_latest_script>
 </record_update>
