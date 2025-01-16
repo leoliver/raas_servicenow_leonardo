@@ -58,8 +58,10 @@
         <record/>
         <record_producer_table>x_1593179_raas_review</record_producer_table>
         <reference>x_1593179_raas_media</reference>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>javascript: new x_1593179_raas.RaaSUtils().refQualMedia();</reference_qual>
+        <reference_qual_condition table="x_1593179_raas_media">state=3^EQ<item display_value="Completed" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -79,14 +81,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-06 18:29:25</sys_created_on>
         <sys_id>73204e77833e12101ff9b8a6feaad3e0</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Movie/TV Show/Episode</sys_name>
         <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
         <sys_update_name>item_option_new_73204e77833e12101ff9b8a6feaad3e0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-07 13:36:59</sys_updated_on>
+        <sys_updated_on>2025-01-16 19:37:14</sys_updated_on>
         <table/>
         <tooltip>Choose a media to rate</tooltip>
         <topic_block/>
@@ -94,7 +96,7 @@
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
