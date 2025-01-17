@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1e9615df834b92101ff9b8a6feaad38f" label="x_1593179_raas_m2m_Medias_Suggestions" max_length="40" name="x_1593179_raas_m2m_medias_suggestions" type="collection">
+        <element attributes="encode_utf8=false" label="Suggestions" max_length="32" name="x_1593179_raas_suggestion" reference="x_1593179_raas_suggestion" type="reference"/>
+        <element attributes="encode_utf8=false" label="Medias" max_length="32" name="x_1593179_raas_media" reference="x_1593179_raas_media" type="reference"/>
+        <index name="index">
+            <element name="x_1593179_raas_media"/>
+        </index>
+        <index name="index2">
+            <element name="x_1593179_raas_suggestion"/>
+        </index>
+    </element>
+</database>

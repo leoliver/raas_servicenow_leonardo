@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_m2m">
+    <sys_m2m action="INSERT_OR_UPDATE">
+        <from_table>x_1593179_raas_media</from_table>
+        <m2m_from_field>x_1593179_raas_media</m2m_from_field>
+        <m2m_from_label>Suggestions</m2m_from_label>
+        <m2m_table>x_1593179_raas_m2m_x_1593179_ra_x_1593179_ra</m2m_table>
+        <m2m_to_field>x_1593179_raas_suggestion</m2m_to_field>
+        <m2m_to_label>Medias</m2m_to_label>
+        <sys_class_name>sys_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-17 12:22:19</sys_created_on>
+        <sys_id>d9a5dd5f834b92101ff9b8a6feaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593179_raas_m2m_x_1593179_ra_x_1593179_ra</sys_name>
+        <sys_package display_value="RaaS - Leonardo" source="x_1593179_raas">69263dae83fa52101ff9b8a6feaad3ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="RaaS - Leonardo">69263dae83fa52101ff9b8a6feaad3ae</sys_scope>
+        <sys_update_name>sys_m2m_d9a5dd5f834b92101ff9b8a6feaad3f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-17 12:22:19</sys_updated_on>
+        <to_table>x_1593179_raas_suggestion</to_table>
+    </sys_m2m>
+</record_update>
